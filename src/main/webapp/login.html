@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/so_common.js"></script>
+    <script src="js/navbar_content.js"></script>
+    <link rel="stylesheet" href="css/login.css">
+    <title>ScratchOne - Login</title>
+    <script>
+        $(function () {
+            load_navbar_content();
+
+            $("#form").submit(function () {
+                ajaxRequestJSON("/loginServlet", "POST", $(this).serialize(), function (data) {
+                    if (data.flag) {
+                        localStorage.so_token = data.data;
+                        location.href = "home.html";
+                    } else {
+                        $("#errorMsg").html(data.errorMsg);
+                        $("#register_alert").show();
+                    }
+                });
+                return false;
+            })
+        })
+
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+
+        function newCode() {
+            $("#verify_img").attr("src", "/checkCodeServlet?time=" + new Date().getTime());
+        }
+    </script>
+
+</head>
+<body>
+<div class="container-fluid">
+    <section class="flex">
+        <div class="content">
+            <div class="topnav" id="myTopnav">
+                <a style="padding:0px !important; margin-left: 10px; margin-top:8px"><img src="img/logo%20bird.png"
+                                                                                          style="width:30px;"></a>
+                <a href="home.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Schools
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="navbar_schools"></div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Majors
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="navbar_majors"></div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Overseas Opportunities
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="navbar_overseas_opportunities"></div>
+                </div>
+                <a href="#" id="navbar_forum">Forum</a>
+                <a href="#" id="navbar_other_resources">Other Resources</a>
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+            <form id="form" action="" method="post">
+                <div class="logo-container">
+                    <img src="img/logo%20bird.png" id=formlogo alt="">
+                </div>
+                <br/>
+                <div class="alert alert-warning alert-dismissible" role="alert" style="text-align: center">
+                    <button type="button" class="register_alert" data-dismiss="alert" hidden>
+                        <span>&times;</span>
+                    </button>
+                    <strong id="errorMsg" style="color: red;"></strong>
+                </div>
+                <table id="table">
+                    <tr>
+                        <td class="td_left"><label for="username">Username</label></td>
+                        <td class="td_right">
+                            <input type="text" id="username" name="username" placeholder="Username">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="password">Password</label></td>
+                        <td class="td_right">
+                            <input type="password" id="password" name="password" placeholder="Password">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="td_left"><label for="verify">Verify</label></td>
+                        <td class="td_right">
+                            <input type="text" id="verify" name="verify">
+                            <a href="javascript:newCode()" id="verify_img_a">
+                                <img src="/checkCodeServlet" title="Click to refresh" id="verify_img" alt="code"/>
+                            </a>
+                        </td>
+                    </tr>
+
+                </table>
+                <div id="login">
+                    <input type="submit" value="Login" style="background-color: #F7E5A9">
+                </div>
+                <div class="reminder"><a href="#">Find your password</a></div>
+                <div class="reminder">New to Scratch One? <a href="signup.html">Sign up</a></div>
+            </form>
+        </div>
+        <div id="bottom">Copyright @ 2020 Scratch One</div>
+    </section>
+</div>
+</body>
+</html>

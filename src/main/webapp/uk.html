@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/so_common.js"></script>
+    <script src="js/navbar_content.js"></script>
+    <link rel="stylesheet" href="css/uk.css">
+    <title>UK</title>
+    <script>
+        $(function () {
+            load_navbar_content();
+            load_login_status();
+
+            $("#qn1").click(function(){
+                if ($('#ans1').is(":visible")) {
+                    $("#ans1").hide();
+                } else {
+                    $("#ans1").show();
+                }
+                $("#glow1").css({"color": " rgba(198, 149,0,1)","box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+
+            $("#glow1").click(function(){
+                if ($('#ans1').is(":visible")) {
+                    $("#ans1").hide();
+                } else {
+                    $("#ans1").show();
+                }
+                $("#glow1").css({"color": " rgba(198, 149,0,1)","box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+
+            $("#qn2").click(function(){
+                if ($('#ans2').is(":visible")) {
+                    $("#ans2").hide();
+                } else {
+                    $("#ans2").show();
+                }
+                $("#glow2").css({"color": " rgba(198, 149,0,1)","box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+
+            $("#glow2").click(function(){
+                if ($('#ans2').is(":visible")) {
+                    $("#ans2").hide();
+                } else {
+                    $("#ans2").show();
+                }
+                $("#glow2").css({"color": " rgba(198, 149,0,1)","box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+
+            $("#qn3").click(function(){
+                if ($('#ans3').is(":visible")) {
+                    $("#ans3").hide();
+                } else {
+                    $("#ans3").show();
+                }
+                $("#glow3").css({"color": " rgba(198, 149,0,1)","box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+
+            $("#glow3").click(function(){
+                if ($('#ans3').is(":visible")) {
+                    $("#ans3").hide();
+                } else {
+                    $("#ans3").show();
+                }
+                $("#glow3").css({"color": " rgba(198, 149,0,1)","box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="contain">
+        <div class="top">
+            <img src="img/logo.png" id="logo">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark " style="clear: both; background-color:black;width: 100%">
+            <li class="nav-item" id="now"><a href="#" class="nav-link" style="color: white">UK</a></li>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">School</a>
+                            <div class="dropdown-menu" id="navbar_schools"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Majors</a>
+                            <div class="dropdown-menu" id="navbar_majors"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Overseas Opportunities</a>
+                            <div class="dropdown-menu" id="navbar_overseas_opportunities"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item" >
+                        <a class="nav-item nav-link " style="color: white" id="#navbar_forum">Forum</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-item nav-link " style="color: white" id="#navbar_other_resources">Other resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div>
+            <img src="img/uk.jpg" id="uk">
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="nav">
+                    <ul>
+                        <li>Menu</li>
+                        <hr>
+                        <li><a class="link" href="#intro">Introduction</a></li>
+                        <li><a class="link" href="#keydates">Key dates</a></li>
+                        <li><a class="link" href="#FAQ">FAQ</a></li>
+                        <li><a class="link" href="#school">Universities</a></li>
+                        <li><a class="link" href="#employment">Employment</a></li>
+                        <li><a class="link" href="#other">Other info</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <article class="col-md-9" id="right" >
+                <div class="head" id="intro">Why UK?</div>
+                <p>The UK is one of the world’s most popular destinations to study higher education, with more than 500,000 international students enrolling each year.
+                    UK universities are among the best in the world, and consistently perform well in world rankings. They also have a reputation for world-class research.
+                    UK courses are generally shorter than other countries (three years for undegraduate, one or two year for master).It can be possible to work while you study too.
+                </p>
+                <p>UK higher education applications are made through the Universities and Colleges Admissions Service (UCAS).</p>
+                <hr>
+                <div class="head" id="keydates">Key dates for application</div>
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div class="timeline">
+                            <div  class="timeline-content">
+                                <div class="timeline-month">
+                                    <span>19 May</span>
+                                </div>
+                                <div class="timeline-icon">
+                                    <i class="fa fa-rocket"></i>
+                                </div>
+                                <h3 class="title">Start of application</h3>
+                                <p class="description">
+                                    UCAS Undergraduate Apply opens for 2021 entry.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-month">
+                                    <span>15 Oct</span>
+                                </div>
+                                <div class="timeline-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h3 class="title">Deadline for certain schools and courses</h3>
+                                <p class="description">
+                                    Applications for <span class="qn">Oxford</span>, <span class="qn">Cambridge</span> and most courses in <span class="qn">medicine</span>,<span class="qn"> dentistry</span>, and <span class="qn">veterinary medicine/science</span> should arrive at UCAS by 18:00 (UK time).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-month">
+                                    <span>15 Jan</span>
+                                </div>
+                                <div class="timeline-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h3 class="title">Deadline for most schools and courses</h3>
+                                <p class="description">
+                                    Applications for the <span class="qn">majority</span> of undergraduate courses should arrive at UCAS by 18:00 (UK time) on this day (check course details in our search tool for the correct deadline).
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-month">
+                                    <span>31 Aug</span>
+                                </div>
+                                <div class="timeline-icon">
+                                    <i class="fa fa-globe"></i>
+                                </div>
+                                <h3 class="title">Deadline for conditions</h3>
+                                <p class="description">
+                                    The deadline for any remaining conditions to be met – otherwise the university or college might not accept the applicant. Adjustment ends on this date.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="head" id="FAQ">Frequently Asked Question</div>
+
+                <div class="row">
+                    <div class="col-sm-1" >
+                        <span class="glow" id="glow1">
+                            <svg class="bi bi-arrow-down-circle-fill" width="1.6em" height="1.6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col-sm-10">
+                        <p class="qn" id="qn1">How much does it cost to study in UK (sgd)</p>
+                        <hr>
+                        <div id="ans1"style="display: none">
+                            <p>Tuition fees for international students vary depending on the course you’re studying. It can range from $23,000 to $99,000 for different courses and schools. Most courses should cost around $40,000.</p>
+                            <p>The basic cost of living in London can range from $1900 to $2300 per month. </p>
+                            <p>The basic cost of living outside of London can range from $1400 to $1800 per month.</p>
+                            <p>The total annual cost can range from $35,600 to $115,200. For most courses, the annual cost should range from $52,600 to $60,700</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-1">
+                        <span class="glow" id="glow2">
+                            <svg class="bi bi-arrow-down-circle-fill" width="1.6em" height="1.6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col-md-10" >
+                        <p class="qn" id="qn2">What should I prepare for UCAS application.</p>
+                        <hr/>
+                        <div id="ans2" style="display: none">
+                            <p>To apply, you will need to prepare predicted grades forecasted by your teachers and referee letters written by your referee. </p>
+                            <p>If you are applying for Oxford and Cambridge, you need to register for the examination and interview. </p>
+                            <p>You may have to go through interview and examination if you are applying for courses such as Law and Medicine from other Universities.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-1">
+                        <span class="glow" id="glow3">
+                            <svg class="bi bi-arrow-down-circle-fill" width="1.6em" height="1.6em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 5a.5.5 0 0 0-1 0v4.793L5.354 7.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 9.793V5z"/>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="col-sm-10" >
+                        <p class="qn" id="qn3">When does the semester starts?</p>
+                        <hr/>
+                        <div id="ans3" style="display: none">
+                            <p>It usually starts around September for semester 1 and January for semester 2.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="head" id="school">University &nbsp  <span id="rank">(ranked by QS)</span></div>
+                <table id="table3" class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col" style="width:15%">UK rank</th>
+                        <th scope="col" style="width:15%">Global rank</th>
+                        <th scope="col" style="width:70%">Institution</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>5</td>
+                        <td>University of Oxford</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>7</td>
+                        <td>University of Cambridge</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>8</td>
+                        <td>Imperial College London</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>10</td>
+                        <td>UCL (University College London)</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>20</td>
+                        <td>University of Edinburgh</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>27</td>
+                        <td>The University of Manchester</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>31</td>
+                        <td>King’s College London (KCL)</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>49</td>
+                        <td>London School of Economics and Political Science (LSE)</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>58</td>
+                        <td>University of Bristol</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>62</td>
+                        <td>The University of Warwick</td>
+                    </tr>
+                    </tbody>
+                </table>
+                *LSE only offer certain courses and its course ranking is actually pretty high.  &nbsp &nbsp <svg class="bi bi-arrow-right-circle-fill" style="color: rgba(198, 149,0,1)" width="1.3em" height="1.3em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-8.354 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L9.793 7.5H5a.5.5 0 0 0 0 1h4.793l-2.147 2.146z"/>
+            </svg><a href="http://www.lse.ac.uk/News/Latest-news-from-LSE/2019/02-Feb-19/LSE-ranked-second-in-the-world-for-social-sciences" class="news" target="_blank"> &nbsp click here.</a>
+
+                <br/>
+                <hr/>
+                <div class="head" id="employment">Employment</div>
+                <p>Jobs for International students are plenty after graduating.
+                    From September 2020 any student enrolling at a UK university can stay in the UK after graduation for up to two years in order to look for work related to their degree or course.
+                <p>Once they have found a job, they will need to apply for Tier 2 visa which will allow them to stay for a maximum of 5 years and 14 days, or the time given on your certificate of sponsorship plus 1 month, whichever is shorter.</p>
+                <hr/>
+
+                <div class="head" id="other">Other Information</div>
+                <div class="row">
+
+                    <div class="col-sm-10">
+                        <div><a href="https://www.ucas.com/" class="news">Universities and Colleges Admissions Service (UCAS)</a></div>
+                        <div><a target="_blank" class="news" href="https://www.ukcisa.org.uk/">UK Council for International Student Affairs</a></div>
+                    </div>
+                </div>
+
+
+            </article>
+
+        </div>
+    </div>
+    <div class="bottom">Copyright @ 2020 Scratch One</div>
+</div>
+</body>
+</html>

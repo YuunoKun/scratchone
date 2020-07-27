@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/so_common.js"></script>
+    <script src="js/navbar_content.js"></script>
+    <link rel="stylesheet" href="css/computinglearning.css">
+    <title>Computing Learning</title>
+    <script>
+        $(function () {
+            load_navbar_content();
+            load_login_status();
+
+            $("#tableone").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#element_target1").offset().top
+                }, 1000);
+            });
+            $("#tabletwo").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#element_target2").offset().top
+                }, 1000);
+            });
+            $("#tablethree").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#element_target3").offset().top
+                }, 1000);
+            });
+            $("#tablefour").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#element_target4").offset().top
+                }, 1000);
+            });
+            $("#tablefive").click(function() {
+                $('html, body').animate({
+                    scrollTop: $("#element_target5").offset().top
+                }, 1000);
+            });
+
+            $("#link1").click(function(){
+                $("#glow1").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link2").click(function(){
+                $("#glow2").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link3").click(function(){
+                $("#glow3").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link4").click(function(){
+                $("#glow4").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link5").click(function(){
+                $("#glow5").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link6").click(function(){
+                $("#glow6").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link7").click(function(){
+                $("#glow7").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link8").click(function(){
+                $("#glow8").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link9").click(function(){
+                $("#glow9").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link10").click(function(){
+                $("#glow10").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link11").click(function(){
+                $("#glow11").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link12").click(function(){
+                $("#glow12").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link13").click(function(){
+                $("#glow13").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link14").click(function(){
+                $("#glow14").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link15").click(function(){
+                $("#glow15").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link16").click(function(){
+                $("#glow16").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link17").click(function(){
+                $("#glow1").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link17").click(function(){
+                $("#glow1").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link18").click(function(){
+                $("#glow18").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link19").click(function(){
+                $("#glow19").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link20").click(function(){
+                $("#glow20").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+            $("#link21").click(function(){
+                $("#glow21").css({"background-color": " rgba(198, 149,0,0.8)", "box-shadow": "0 0 10px rgba(198, 149,0,.5),0 0 20px rgba(198, 149,0,.5),0 0 30px rgba(198, 149,0,.5),\n" +
+                        "            0 0 50px rgba(198, 149,0,.5),\n" +
+                        "            0 0 75px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 60px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 45px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 30px rgba(198, 149,0,0.05),\n" +
+                        "            0 0 15px rgba(198, 149,0,0.05)"});
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <img src="img/logo.png" id="logo">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark " style="clear: both; background-color:black;width: 100%">
+        <li class="nav-item" id="now"><a href="#" class="nav-link" style="color: white">Computing Learning</a></li>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="home.html" style="color: white">Home</a>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">School</a>
+                        <div class="dropdown-menu" id="navbar_schools"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Majors</a>
+                        <div class="dropdown-menu" id="navbar_majors"></div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Overseas Opportunities</a>
+                        <div class="dropdown-menu" id="navbar_overseas_opportunities"></div>
+                    </div>
+                </li>
+
+                <li class="nav-item" >
+                    <a class="nav-item nav-link " style="color: white" id="#navbar_forum">Forum</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-item nav-link " style="color: white" id="#navbar_other_resources">Other resources</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="head">
+        <p>Computing foundation</p>
+    </div>
+    <div class="content">
+        <div class="row">
+            <header class="col-md-3">
+                <div class="nav">
+                    <ul>
+                        <li>Contents</li>
+                        <hr>
+                        <li><a class="link" id="tableone" href="#element_target1">Intro to programming</a></li>
+                        <li><a class="link" id="tabletwo" href="#element_target2">Intro to data structure</a></li>
+                        <li><a class="link" id="tablethree" href="#element_target3">Recursion</a></li>
+                        <li><a class="link"  id="tablefour" href="#element_target4">Object Oriented Programming</a></li>
+                        <li><a class="link"  id="tablefive" href="#element_target5">Algorithm</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="col-md-8" id="right">
+                <p>Introduction to Computer Science and Programming in Python is intended for students with little or no programming experience. It aims to provide students with an understanding of the role computation can play in solving problems and to help students, regardless of their major, feel justifiably confident of their ability to write small programs that allow them to accomplish useful goals. </p>
+                <p style="float: right;font-weight: bold;color: #E0AA3E;padding-right: 5px" >Course provider: MIT</p>
+                <br/>
+                <hr>
+                <p class="subtitle" id="element_target1" >Intro to programming</p>
+                <p>Learn what is computation and the basic syntax.</p>
+                <hr>
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow1" style="color: white;">1</span></td>
+                            <td><a id="link1" target="_blank" href="https://www.youtube.com/watch?v=nykOeWgQcHM&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=1">What is Computation?</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow2" style="color: white;">2</span></td>
+                            <td><a id="link2" target="_blank" href="https://www.youtube.com/watch?v=F-_PKUUM-qY&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=3">Shell vs. Editor</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow3" style="color: white;">3</span></td>
+                            <td><a id="link3" target="_blank" href="https://www.youtube.com/watch?v=F-_PKUUM-qY&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=3">Python vs. Math</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow4" style="color: white;">4</span></td>
+                            <td><a id="link4" target="_blank" href="https://www.youtube.com/watch?v=EFCdr_43qmU&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=4">Bindings</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow5" style="color: white;">5</span></td>
+                            <td><a id="link5" target="_blank" href="https://www.youtube.com/watch?v=0jljZRnHwOI&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=5">Branching and Iteration</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow6" style="color: white;">6</span></td>
+                            <td><a id="link6" target="_blank" href="https://www.youtube.com/watch?v=w4uxYDPsjbw&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=6">Strings</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow7" style="color: white;">7</span></td>
+                            <td><a id="link7" target="_blank" href="https://www.youtube.com/watch?v=lniF6ys2CIk&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=7">Comparison</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow8" style="color: white;">8</span></td>
+                            <td><a id="link8" target="_blank" href="https://www.youtube.com/watch?v=jjbWNcIjmzc&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=8">Branching</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow9" style="color: white;">9</span></td>
+                            <td><a id="link9" target="_blank" href="https://www.youtube.com/watch?v=P-0w8xWcnDQ&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=9">While loop</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow10" style="color: white;">10</span></td>
+                            <td><a id="link10" target="_blank" href="https://www.youtube.com/watch?v=mrvBnZIEsZY&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=10">For loop</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow11" style="color: white;">11</span></td>
+                            <td><a id="link11" target="_blank" href="https://www.youtube.com/watch?v=SE4P7IVCunE&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=11">String Manipulation, Guess and Check, Approximations, Bisection</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <p class="subtitle" id="element_target2">Intro to data structure</p>
+                <p>Learn about basic data srtucture such as list.</p>
+                <hr>
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow12" style="color: white;">1</span></td>
+                            <td><a id="link12" target="_blank"  href="https://www.youtube.com/watch?v=SE4P7IVCunE&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=11">Tuples, Lists, Aliasing, Mutability, and Cloning</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow13" style="color: white;">2</span></td>
+                            <td><a id="link13" target="_blank" href="https://www.youtube.com/watch?v=SrkqbLOQcEo&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=20">List operation</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow14" style="color: white;">3</span></td>
+                            <td><a id="link14" target="_blank" href="https://www.youtube.com/watch?v=FKp-6sojt9A&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=21">List Aliasing/Mutation</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <p class="subtitle" id="element_target3">Intro to recursion</p>
+                <p>Learn about recursion and testing.</p>
+                <hr>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow15" style="color: white;">1</span></td>
+                            <td><a id="link15" target="_blank" href="https://www.youtube.com/watch?v=WPSeyjX1-4s&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=22">Recursion and Dictionaries</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow16" style="color: white;">2</span></td>
+                            <td><a id="link16" target="_blank" href="https://www.youtube.com/watch?v=9H6muyZjms0&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=23">Testing, Debugging, Exceptions, and Assertions</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <p class="subtitle" id="element_target4">Intro to Object Oriented Programming</p>
+                <p> Learn about Object Oriented Programming and Inheritance. </p>
+                <hr>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow17" style="color: white;">1</span></td>
+                            <td><a id="link17" target="_blank" href="https://www.youtube.com/watch?v=-DP1i2ZU9gk&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=27">Object Oriented Programming</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow18" style="color: white;">2</span></td>
+                            <td><a id="link18" target="_blank" href="https://www.youtube.com/watch?v=FlGjISF3l78&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=33">Python Classes and Inheritance</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <p class="subtitle" id="element_target5">Intro to algorithm</p>
+                <p>Learn about program efficiency, searching and sorting algorithm.</p>
+                <hr>
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow19" style="color: white;">1</span></td>
+                            <td><a id="link19" target="_blank" href="https://www.youtube.com/watch?v=o9nW0uBqvEo&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=36">Understanding Program Efficiency, Part 1</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow20" style="color: white;">2</span></td>
+                            <td><a id="link20" target="_blank" href="https://www.youtube.com/watch?v=7lQXYl_L28w&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=37">Understanding Program Efficiency, Part 2</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+                <div class="module">
+                    <table>
+                        <tr>
+                            <td> <span class="glow" id="glow21" style="color: white;">3</span></td>
+                            <td><a id="link21" target="_blank" href="https://www.youtube.com/watch?v=6LOwPhPDwVc&list=PLUl4u3cNGP63WbdFxL8giv4yhgdMGaZNA&index=38">Searching and Sorting</a></td>
+                        </tr>
+                    </table>
+                    <hr/>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bottom">Copyright @ 2020 Scratch One</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,208 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+
+#logo{
+    max-width: 100%;
+    height: auto;
+    margin-left:8px;
+    width: 400px;
+}
+
+
+#now{
+    display: block;
+    background-color: #c69500;
+}
+
+#top{
+    font-size: 30px;
+    color: #c69500;
+}
+
+
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    color: #c69500;
+    text-decoration: none;
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+
+}
+
+.nav>li>:hover {
+    color:#f0be26;
+    text-decoration: none;
+}
+
+
+#but{
+    float: right;
+}
+
+#edit{
+    margin-right: 20px;
+    border-radius:20px;
+    width: 60px;
+}
+
+#profile_update{
+    border-radius: 20px;
+    width: 80px;
+    margin-right: 20px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: gray;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+#form>div{
+    margin:20px;
+}
+
+._username{
+    width: 250px;
+    height: 35px;
+}
+
+._school{
+    width: 250px;
+    height: 35px;
+}
+
+._email{
+    width: 250px;
+    height: 35px;
+}
+._targetmajor{
+    width: 250px;
+    height: 35px;
+}
+._targetschool{
+    width: 250px;
+    height: 35px;
+}
+
+#profile_img_upload{
+    width: 100px;
+}
+.profile-container{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    vertical-align: middle;
+    text-align: center;
+    display: table-cell;
+}
+.avatar{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 769px){
+
+
+    .profile-container{
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-img>input{
+        width: 100px;
+    }
+    #upload{
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 700px){
+    .profile-img>input{
+        width: 100px;
+    }
+    .profile-container{
+        width: 150px;
+        height: 150px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 401px){
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding-right: 5px;
+        color: #c69500;
+        text-decoration: none;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+
+    }
+    .profile-container{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 361px){
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding-right: 2px;
+        color: #c69500;
+        text-decoration: none;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        font-size: 14px;
+
+    }
+    .profile-container{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media screen and (max-width: 341px){
+    .nav>li>a {
+        position: relative;
+        display: block;
+        padding-right: 2px;
+        color: #c69500;
+        text-decoration: none;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        font-size: 13px;
+
+    }
+    .profile-container{
+        width: 150px;
+        height: 150px;
+    }
+
+}
+

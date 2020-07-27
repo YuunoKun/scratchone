@@ -1,0 +1,25 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+
+    <filter>
+        <filter-name>loginFilter</filter-name>
+        <filter-class>me.scratchone.web.filter.LoginFilter</filter-class>
+        <init-param>
+            <param-name>redirectURL</param-name>
+            <param-value>login.html</param-value>
+        </init-param>
+        <init-param>
+            <param-name>ignoreURL</param-name>
+            <param-value>login.html,signup.html,css,font,javascript,image</param-value>
+        </init-param>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>loginFilter</filter-name>
+        <url-pattern>/user-interface.html</url-pattern>
+    </filter-mapping>
+</web-app>

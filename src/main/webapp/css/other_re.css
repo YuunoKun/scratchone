@@ -1,0 +1,129 @@
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+}
+
+
+#logo{
+    max-width: 100%;
+    height: auto;
+    margin-left:8px;
+    width: 400px;
+}
+
+
+.heading{
+    margin:10px;
+    color: #c69500;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Abril Fatface";
+}
+
+.other{
+    margin:10px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.other a {
+    text-decoration: none;
+    color: #BCB292;
+}
+.other a:hover{
+    text-decoration: none;
+    color: #A49B7E;
+}
+
+
+.nav-link:hover{
+    background-color:#555;
+}
+
+.bottom {
+    box-sizing: border-box;
+    height: 20px;
+    padding-top:10px;
+    width: 100%;
+    color: gray;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+nav{
+    box-sizing: border-box;
+}
+
+#now{
+    display: block;
+    background-color: #c69500;
+}
+
+@media screen and (max-width: 600px) {
+    .top img{
+        width: 40%;
+    }
+    .top{
+        height:6%;
+    }
+    .container-fluid{
+        height: 110%;
+    }
+    .contain{
+        height: 105%;
+    }
+    .bottom{
+        color: gray;
+        font-family: Arial;
+        font-size: small;
+        text-align: center;
+        padding-top: 15px;
+        height: 5%;
+
+    }
+}
+
+@media screen and (max-width: 380px){
+    .container-fluid{
+        height: 128%;
+    }
+    .contain{
+        height: 124%;
+    }
+    .bottom{
+        color: gray;
+        font-family: Arial;
+        font-size: small;
+        text-align: center;
+        padding-top: 15px;
+        height: 5%;
+
+    }
+}
+
+
+
+
+@media screen and (max-width: 1025px) {
+    .top{
+        height:7%;
+    }
+    .top img{
+        width: 34%;
+    }
+}

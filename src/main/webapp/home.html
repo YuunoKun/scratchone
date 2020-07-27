@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/so_common.js"></script>
+    <script src="js/navbar_content.js"></script>
+    <link rel="stylesheet" href="css/home.css">
+    <title>Home</title>
+    <script>
+        $(function () {
+            load_navbar_content();
+            load_login_status();
+        })
+    </script>
+</head>
+<body>
+<div class="container-fluid" style=" min-height:100%;position:relative;">
+    <div class="content">
+        <div class="top">
+            <img src="img/logo.png" id="logo">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark " style="clear: both; background-color:black;width: 100%">
+            <li class="nav-item" id="now"><a href="home.html" class="nav-link" style="color: white">Home</a></li>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">School</a>
+                            <div class="dropdown-menu" id="navbar_schools"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Majors</a>
+                            <div class="dropdown-menu" id="navbar_majors"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Overseas
+                                Opportunities</a>
+                            <div class="dropdown-menu" id="navbar_overseas_opportunities"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-item nav-link " style="color: white" id="#navbar_forum">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link " style="color: white" id="#navbar_other_resources">Other
+                            resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="one">
+            <div class="sub1">Why us?</div>
+            <div class="sub2">
+                Get all information you need for making the<span style="color:#E0AA3E;font-weight:bold"> RIGHT</span>
+                university-related decision.
+                <br/>
+                <span style="color:#E0AA3E;font-weight: bold">Be smart.</span> Explore all options available.
+            </div>
+            <img src="img/grad.png" id="grad">
+        </div>
+        <div class="bottom">Copyright @ 2020 Scratch One</div>
+    </div>
+</div>
+</body>
+</html>

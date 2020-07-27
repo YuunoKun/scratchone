@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/so_common.js"></script>
+    <script src="js/navbar_content.js"></script>
+    <link rel="stylesheet" href="css/nus.css">
+    <title>Main</title>
+
+    <script>
+        $(function () {
+            load_navbar_content();
+            load_login_status();
+        })
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="contain">
+        <div class="top">
+            <img src="img/logo.png" id="logo" alt="">
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark " style="clear: both; background-color:black;width: 100%">
+            <li class="nav-item" id="now"><a href="#" class="nav-link" style="color: white">NUS</a></li>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html" style="color: white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">School</a>
+                            <div class="dropdown-menu" id="navbar_schools"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Majors</a>
+                            <div class="dropdown-menu" id="navbar_majors"></div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" style="color: white">Overseas Opportunities</a>
+                            <div class="dropdown-menu" id="navbar_overseas_opportunities"></div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item" >
+                        <a class="nav-item nav-link " style="color: white" id="#navbar_forum">Forum</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-item nav-link " style="color: white" id="#navbar_other_resources">Other resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="row component">
+            <div class="col-sm-5" id="nuscon" >
+                <img src="img/nus.jpg" alt="nus" class="nuslogo">
+            </div>
+            <div class="col-sm-7" >
+                <p class="head">National University Of Singapore</p>
+                <hr>
+                <p> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp National University of Singapore is ranked consistently as one of the world's top universities.
+                    It has <strong>13</strong> undergraduate schools with <strong>59</strong> bachelor's degree including sciences, medicine and dentistry, design and environment, law, arts and social sciences, engineering, business, computing and music.
+                    NUS's main campus is located in the southwestern part of Singapore, adjacent to Kent Ridge. Its Bukit Timah campus houses the Faculty of Law and Lee Kuan Yew School of Public Policy.
+                    The Yale-NUS College is a liberal arts college established in collaboration with Yale University, is located at University Town.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row component" >
+            <div class="col-sm-7" style="padding-right: 0px">
+                <p class="head">Latest News - Covid 19 updates</p>
+                <hr>
+                <p>
+                    "All coursework will be available online in Semester 1.
+                    Also in Semester 1, all courses will be taught face to face to the maximum extent possible. We have social distancing constraints; no more than 50 students can attend a class face to face.
+                    Teaching may be at odd times: we will be teaching from 8:00am through 10:00 pm Monday through Friday, as well as Saturdays and Sundays."
+                </p>
+                <p>&#8212 NUS Business School</p>
+                <p>"To comply with the safety measures, FASS will adopt e-learning and e-assessment for undergraduate modules in Semester 1, AY2020-2021.
+                    This would mean by default, all lectures, seminars and tutorials, as well as assessments will be conducted online"</p>
+                <p>&#8212 NUS Faculty of Arts and Social Sciences</p>
+            </div>
+            <div class="col-sm-5">
+                <div id="fasscon"><img src="img/fass.jpg" alt="fass" style="width: 100%"></div>
+            </div>
+        </div>
+
+        <div class="row" style="margin:0px;" id="three">
+            <div class="col-sm-6 separate" style="padding-right: 10px" id="video">
+                <p class="head">Institutional Video</p>
+                <hr>
+                <iframe width=100% height="340" src="https://www.youtube.com/embed/iMgWJD8a2Xc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-sm-5 separate" id="link">
+                <p class="head"> Related Links</p>
+                <hr>
+                <div class="list-group">
+                    <div class="other" ><a href="http://www.nus.edu.sg/oam" class="list-group-item list-group-item-action">NUS Office of Admission</a></div>
+                    <div class="other"><a href="http://www.nus.edu.sg/oam/undergraduate-programmes/indicative-grade-profile-(igp)"  class="list-group-item list-group-item-action">NUS Indicative Grade Profile</a></div>
+                    <div class="other" ><a href="http://www.nus.edu.sg/registrar/info/ug/UGTuitionCurrent.pdf" class="list-group-item list-group-item-action">NUS Tuition fees</a></div>
+                    <div class="other" ><a href="https://beta.moe.gov.sg/uploads/Web-Publication-NUS-GES-2019.pdf" class="list-group-item list-group-item-action">NUS graduate employment survey by MOE</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bottom">Copyright @ 2020 Scratch One</div>
+</div>
+</body>
+</html>

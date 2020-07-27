@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#content{
+    padding-top: 20px;
+    flex: 1;
+    background-color: #FFFAE6;
+}
+
+#bottom {
+    color: gray;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
+    padding-top: 10px;
+    height: 3%;
+    background-color: #FFFAE6;
+    box-sizing: border-box;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    box-sizing: border-box;
+}
+#myTopnav{
+    box-sizing: border-box;
+    height: 50px;
+}
+
+
+
+form{
+    height: 100%;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+}
+#formlogo{
+    margin-top: 10px;
+    width:18%;
+    height:13%;
+}
+
+
+.logo-container{
+    text-align: center;
+}
+
+table{
+    margin: auto;
+}
+
+#submit_btn{
+    margin-left: 14px;
+    margin-top:20px;
+    background-color: #F7E5A9;
+    font-size: large;
+}
+
+table td{
+    padding-top: 15px;
+}
+table td input{
+    height: 35px;
+    width: 200px;
+}
+label {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.input-container{
+    margin-top: 15px;
+    height: 40px;
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.input-container input{
+    width: 40%;
+    height: 100%;
+}
+
+.select-container{
+    height: 35px;
+    margin-top: 15px;
+}
+
+.select-container select{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    left:37%;
+}
+
+.select-container input{
+    width: 200px;
+    height: 100%;
+    position: relative;
+    left:32%;
+}
+
+.reminder{
+    margin-top: 20px;
+    text-align: center;
+    font-size: small;
+    font-family: Arial;
+    color:gray;
+    padding-bottom: 15px;
+}
+form a {
+    text-decoration: none;
+    color: #BCB292;
+}
+
+form a:hover{
+    text-decoration: none;
+    color: #A49B7E;
+}
+
+::placeholder {
+    font-size:20px;
+}
+
+
+#code{
+    text-align: center;
+    height: 60px;
+    margin-top: 15px;
+}
+select {
+    width: 40%;
+    height: 100%;
+}
+#warning1{
+    font-family: Arial;
+    color: grey;
+    font-size: small;
+    width: 300px;
+}
+
+#warning2{
+    font-family: Arial;
+    color: grey;
+    font-size: small;
+    width: 300px;
+}
+#warning3{
+    font-weight: bold;
+    font-family: Arial;
+    color: red;
+    font-size: small;
+    width: 300px;
+}
+
+.lab{
+    position: relative;
+    left:25%;
+}
+.text-container{
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: white;
+    overflow: hidden;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; !important;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color:  #BCB292;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.topnav a:hover{
+    text-decoration: none;
+    color: #A49B7E;
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; !important;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color:  #BCB292;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropbtn:hover{
+    text-decoration: none;
+    color: #A49B7E;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 770px) {
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+    #content {
+        height: 85%;
+        padding-top: 10px;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    #content{
+        height: 92%;
+    }
+
+
+    form {
+        margin: 10px auto;
+        width: 60%;
+        height: 100%;
+        background-color: white;
+    }
+
+    ::placeholder {
+        font-size: 10px;
+    }
+
+    #warning1 {
+        font-size: small;
+    }
+
+    #warning2 {
+        font-size: small;
+    }
+
+    #warning3 {
+        font-size: small;
+    }
+
+    #signup {
+        font-size: 15px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 600px){
+    #content{
+        height: 108%;
+    }
+
+    form{
+        height: 100%;
+        margin: 0px auto;
+        width: 80%;
+        background-color: white;
+    }
+
+
+    label{
+        font-size: 9px;
+    }
+
+    .lab{
+        left:10%;
+    }
+
+    table {
+        margin-left:10%;
+    }
+
+    #warning1{
+
+        font-size: 6px;
+
+    }
+
+    #warning2{
+
+        font-size: 6px;
+
+    }
+    #warning3{
+        font-size: 6px;
+    }
+
+}
+
+@media screen and (max-width: 325px) {
+
+    table {
+        margin-left:6%;
+    }
+
+    html, body {
+        height: 110%;
+        margin: 0px;
+
+    }
+    #content{
+        padding-top: 10px;
+    }
+    form{
+
+        width: 90%;
+
+    }
+
+    ::placeholder{
+        font-size:10px;
+    }
+
+    #warning1{
+        font-size: 10px; !important;
+    }
+
+    #warning2{
+        font-size: 10px; !important;
+    }
+    #warning3{
+
+        font-size: 10px; !important;
+
+    }
+
+
+    #signup{
+        font-size: 15px;
+    }
+    input{
+        width: 100px; !important;
+    }
+}
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+
+}
+
+#logo{
+    max-width: 100%;
+    height: auto;
+    margin-left:8px;
+    width: 400px;
+}
+
+
+#nuscon{
+    text-align: center;
+}
+
+.nuslogo {
+    height: 320px;
+    width: 250px;
+    margin-top:30px;
+}
+
+#fasscon {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top:25px;
+    width: 95%;
+    margin-bottom: 10px;
+}
+
+.other {
+    margin:15px;
+    text-align: center;
+    color: #c69500;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.other a {
+    color: #c69500;
+
+}
+.other a:hover{
+    color: #ebc450;
+}
+.head{
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#now{
+    display: block;
+    background-color: #c69500;
+}
+
+
+
+.nav-link:hover{
+    background-color:#555;
+}
+
+
+.bottom {
+    color: gray;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
+    padding-top: 15px;
+
+}
+#now{
+    display: block;
+    background-color: #c69500;
+}
+.intro{
+    text-align: center;
+    font-family: "Abril Fatface";
+    font-size:25px;
+}
+
+.component{
+    margin-top: 25px;
+    margin-left:1px;
+    margin-right: 1px;
+    border-color:#e8eaeb;
+    border-style: groove;
+}
+
+
+.separate {
+    border-color: #e8eaeb;
+    border-style: groove;
+    margin-top:25px;
+}
+#three{
+    display: block;
+    width: 100%;
+    overflow:auto;
+}
+
+#video{
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+#link{
+    overflow: hidden;
+    position: relative;
+    float: right;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .container-fluid{
+        height: 110%;
+    }
+    .contain{
+        height: 105%;
+    }
+    .bottom{
+        color: gray;
+        font-family: Arial;
+        font-size: small;
+        text-align: center;
+        padding-top: 15px;
+        height: 5%;
+
+    }
+}
+
+@media screen and (max-width: 380px){
+    .container-fluid{
+        height: 125%;
+    }
+    .contain{
+        height: 120%;
+    }
+    .bottom{
+        color: gray;
+        font-family: Arial;
+        font-size: small;
+        text-align: center;
+        padding-top: 15px;
+        height: 5%;
+
+    }
+}
+
+
+
+
