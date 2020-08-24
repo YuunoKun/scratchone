@@ -1,0 +1,116 @@
+.bottom {
+    box-sizing: border-box;
+    height: 20px;
+    padding-top:10px;
+    width: 100%;
+    color: gray;
+    font-family: Arial;
+    font-size: small;
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+#now{
+    display: block;
+    background-color: #c69500;
+}
+
+#logo{
+    max-width: 100%;
+    height: auto;
+    margin-left:8px;
+    width: 400px;
+}
+
+.post_title{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+}
+
+.post_block{
+    display: block;
+    border:black solid 1px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:10px;
+    width:100%;
+}
+
+
+
+.reply_block {
+    display: block;
+    border:grey solid 1px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-top:10px;
+    width:100%;
+}
+
+.profile-holder{
+    text-align: center;
+}
+
+.post_avatar{
+    width: 75px;
+    height: 75px;
+    margin-bottom: 5px;
+}
+
+.post_username{
+    font-size: 13px;
+    text-align: center;
+}
+
+.col-sm-10{
+    position: relative;
+}
+
+.postTime{
+    font-size: 14px;
+    text-align: right;
+    position:absolute;
+    bottom: 0px;
+    right:40px;
+}
+
+.postTime button {
+    border-radius: 5px;
+}
+
+.comment-holder{
+    width: 60%;
+    margin:20px auto;
+}
+
+.comment-holder label{
+    color: #cc9900;
+    font-family: Consolas;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.comment-holder button{
+    border-radius: 5px;
+}
+
+.type-comment{
+    display:block;
+    height: 120px;
+    width: 100%;
+}

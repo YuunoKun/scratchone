@@ -8,7 +8,11 @@ import me.scratchone.service.SchoolService;
 import me.scratchone.service.UserService;
 import me.scratchone.service.impl.SchoolServiceImpl;
 import me.scratchone.service.impl.UserServiceImpl;
+import me.scratchone.util.JedisUtil;
+import me.scratchone.util.SerializeUtil;
+import me.scratchone.util.UserCensorUtil;
 import org.apache.commons.beanutils.BeanUtils;
+import redis.clients.jedis.Jedis;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -43,6 +47,14 @@ public class UpdateProfileServlet extends HttpServlet {
             try {
                 UserService userService = new UserServiceImpl();
                 userService.updateProfile(user);
+
+
+                String token = null;
+                token = req.getHeader("so_token");
+                Jedis jedis = JedisUtil.getJedis();
+                Long ret = jedis.del(token.getBytes());
+                jedis.set(token.getBytes(), SerializeUtil.serialize(UserCensorUtil.censor(userService.getUserProfileByUid(user.getUid()))));
+                jedis.expire(token.getBytes(), 24 * 60 * 60);
                 resultInfo.setFlag(true);
             } catch(Exception e) {
                 resultInfo.setFlag(false);

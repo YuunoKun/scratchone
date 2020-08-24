@@ -10,6 +10,7 @@ import me.scratchone.service.impl.SchoolServiceImpl;
 import me.scratchone.service.impl.UserServiceImpl;
 import me.scratchone.util.JedisUtil;
 import me.scratchone.util.SerializeUtil;
+import me.scratchone.util.UserCensorUtil;
 import redis.clients.jedis.Jedis;
 
 import javax.servlet.ServletException;
@@ -19,6 +20,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 
 @WebServlet("/profileQueryServlet")
 public class ProfileQueryServlet extends HttpServlet {
@@ -53,9 +55,11 @@ public class ProfileQueryServlet extends HttpServlet {
                 resultInfo.setFlag(false);
                 resultInfo.setErrorMsg("Server error: Profile not found.");
             } else {
-                user.setStatus("");
-                user.setCode("");
-                user.setPassword("");
+                try {
+                    user = UserCensorUtil.censor(user);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
 
                 SchoolService schoolService = new SchoolServiceImpl();
                 School school = schoolService.queryForSchool(user.getSid());

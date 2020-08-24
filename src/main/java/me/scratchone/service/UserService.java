@@ -14,4 +14,6 @@ public interface UserService {
     User getProfile(String username);
 
     void updateProfile(User user);
+
+    User getUserProfileByUid(int uid);
 }

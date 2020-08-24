@@ -89,4 +89,18 @@ public class UserDaoImpl implements UserDao {
             e.printStackTrace();
         }
     }
+
+    @Override
+    public User findUserByUid(int uid) {
+        User user = null;
+        try {
+            String sql = "select * from so_user where uid = ?";
+            user = template.queryForObject(sql, new BeanPropertyRowMapper<User>(User.class), uid);
+        } catch(EmptyResultDataAccessException ignored) {
+
+        }  catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
+    }
 }

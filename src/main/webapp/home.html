@@ -11,18 +11,77 @@
     <script src="js/so_common.js"></script>
     <script src="js/navbar_content.js"></script>
     <link rel="stylesheet" href="css/home.css">
-    <title>Home</title>
+
+    <title>ScratchOne</title>
     <script>
         $(function () {
             load_navbar_content();
             load_login_status();
+
+            ajaxRequestJSON("/articleInitServlet", "POST", $(this).serialize(), function(data){
+
+                if(data.flag) {
+
+                } else {
+                    alert(data.errorMsg);
+                }
+            })
         })
     </script>
+
+    <style>
+
+        .header{
+            border-bottom: solid 1px #ffe8a1;
+        }
+
+        .article_img{
+            float:left;
+            display: block;
+        }
+
+        .article_text{
+            float:left;
+        }
+
+        #article > div{
+            width: 100%;
+            height: 170px;
+            border: 1px solid #eee;
+            margin-bottom: 15px;
+            margin-top: 10px;
+        }
+
+        .banner_img{
+            width: 100%;
+            height: 400px;
+        }
+
+        #article img{
+            width: 300px;
+            height:170px;
+        }
+
+        .article_text{
+            margin-left: 20px;
+            margin-top: 15px;
+        }
+
+        #totalCount,#totalPage{
+            font: 16px Arial;
+            color: #007bff;
+        }
+
+        .pageNum{
+            margin-top:30px;
+        }
+
+    </style>
 </head>
 <body>
 <div class="container-fluid" style=" min-height:100%;position:relative;">
     <div class="content">
-        <div class="top">
+        <div class="top" style="float:left">
             <img src="img/logo.png" id="logo">
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark " style="clear: both; background-color:black;width: 100%">
@@ -53,15 +112,127 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-item nav-link " style="color: white" id="#navbar_forum">Forum</a>
+                        <a class="nav-item nav-link " style="color: white" id="navbar_forum">Forum</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-item nav-link " style="color: white" id="#navbar_other_resources">Other
+                        <a class="nav-item nav-link " style="color: white" id="navbar_other_resources">Other
                             resources</a>
                     </li>
                 </ul>
             </div>
         </nav>
+
+        <section id="banner">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" ></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="img/banner1.jpg" class="banner_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NUS Business school</h5>
+                            <p>Leading from Asia</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="img/banner2.png" class="banner_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>NUS Utown</h5>
+                            <p>Campus life for students</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banner3.jpg" class="banner_img" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>SMU</h5>
+                            <p>City university, global focus</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <br/>
+        <br/>
+
+        <div>
+            <div class="article container">
+                <div class="header">
+                   Recent News
+                </div>
+                <div id="article">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/hires_logo_bw.jpg" alt="" class="article_img">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>The rejuvenated Yunnan Garden</h3>
+                            <p>The rejuvenated Yunnan Garden, a green lung in our urban city, is now a nine-hectare precinct for leisure, education and heritage, updated for today’s generation of students.</p>
+                            <a href="http://www.hey.ntu.edu.sg/issue44/the-new-yunnan-garden-experience.html">Click here for more details</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/white-1200x630.jpg" alt="" class="article_img">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>First Choice Bonus Points Scheme</h3>
+                            <p>NUS will award bonus points for the first choice of course of applicants to NUS with Singapore-Cambridge GCE 'A' Levels, Polytechnic, NUSHS and IB qualifications, for admission in Academic Year 2019/2020. </p>
+                            <a href="http://www.nus.edu.sg/oam/news-events">Click here for more details</a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/sit-logo.jpg" alt="" class="article_img">
+                        </div>
+                        <div class="col-md-7">
+                            <h3>Safe re-opening of site campus</h3>
+                            <p>All six campuses will re-open on Tuesday, 2 June. All lectures and tutorials will continue via home-based learning. Only practical and lab sessions will be conducted on campus, with no more than 25 students per session. </p>
+                            <a href="https://www.singaporetech.edu.sg/digitalnewsroom/safe-re-opening-of-sit-campuses/">Click here for more details</a>
+                        </div>
+                    </div>
+
+                </div>
+
+<!--                <div class="pageNum">-->
+<!--                    <ul class="pagination">-->
+<!--                        <li class="page-item">-->
+<!--                            <a class="page-link" href="#" aria-label="Previous">-->
+<!--                                <span aria-hidden="true">&laquo;</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">1</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">2</a></li>-->
+<!--                        <li class="page-item"><a class="page-link" href="#">3</a></li>-->
+<!--                        <li class="page-item">-->
+<!--                            <a class="page-link" href="#" aria-label="Next">-->
+<!--                                <span aria-hidden="true">&raquo;</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+
+<!--                <div class="page_num_inf">-->
+<!--                    <i></i> Total-->
+<!--                    <span id="totalPage">1</span> Page(s), <span id="totalCount">1</span> Articles-->
+<!--                </div>-->
+            </div>
+        </div>
+
+        <br/>
 
         <div class="one">
             <div class="sub1">Why us?</div>
@@ -71,7 +242,6 @@
                 <br/>
                 <span style="color:#E0AA3E;font-weight: bold">Be smart.</span> Explore all options available.
             </div>
-            <img src="img/grad.png" id="grad">
         </div>
         <div class="bottom">Copyright @ 2020 Scratch One</div>
     </div>

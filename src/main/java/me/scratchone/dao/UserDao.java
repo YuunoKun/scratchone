@@ -15,4 +15,6 @@ public interface UserDao {
     void updateUserStatusByCode(String code);
 
     void updateUserByProfile(User user);
+
+    User findUserByUid(int uid);
 }

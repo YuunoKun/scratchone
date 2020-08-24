@@ -39,7 +39,7 @@ public class AvatarQueryServlet extends HttpServlet {
             if(file != null) {
                 resp.getWriter().write("/avatarQueryServlet?avatarUid=" + uid);
             } else {
-                resp.getWriter().write("img/avatar_2x.png");
+                resp.getWriter().write("/img/avatar_2x.png");
             }
         }
     }

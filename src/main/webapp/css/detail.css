@@ -1,0 +1,37 @@
+h3 {
+    color: #c69500;
+    font-weight: bold;
+    font-family: 'Lato', 'Noto Sans', 'Helvetica', 'Corbel', sans-serif, 'Helvetica', 'Corbel', sans-serif;
+}
+.post_block{
+    display: block;
+    border-bottom:#cbced1 solid 1px;
+    margin-bottom:10px;
+    padding-bottom: 10px;
+    margin-top:10px;
+}
+.profile-holder{
+    text-align: center;
+}
+
+.profile-picture{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+}
+
+.user-Name{
+    font-size: 13px;
+    text-align: center;
+}
+.col-sm-10{
+    position: relative;
+}
+.postTime{
+    font-size: 14px;
+    text-align: right;
+    position:absolute;
+    bottom: 0px;
+    right:20px;
+
+}

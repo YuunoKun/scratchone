@@ -19,4 +19,13 @@ public class School implements Serializable {
     public int getTid() { return tid; }
 
     public void setTid(int tid) { this.tid = tid; }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "sid=" + sid +
+                ", name='" + name + '\'' +
+                ", tid=" + tid +
+                '}';
+    }
 }

@@ -23,11 +23,15 @@ public class LoginStatusServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 //        String token = req.getHeader("so_token");
         String token = null;
-        for (Cookie cookie : req.getCookies()) {
-            if(cookie.getName().equals("so_token")) {
-                token = cookie.getValue();
+
+        if(req.getCookies() != null) {
+            for (Cookie cookie : req.getCookies()) {
+                if(cookie.getName().equals("so_token")) {
+                    token = cookie.getValue();
+                }
             }
         }
+
 
         Jedis jedis = JedisUtil.getJedis();
 

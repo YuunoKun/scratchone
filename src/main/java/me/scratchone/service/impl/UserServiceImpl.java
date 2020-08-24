@@ -53,4 +53,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public void updateProfile(User user) { userDao.updateUserByProfile(user); }
+
+    @Override
+    public User getUserProfileByUid(int uid) { return userDao.findUserByUid(uid); }
 }
